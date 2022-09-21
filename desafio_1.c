@@ -28,22 +28,21 @@ int main () {
         switch (menu)
         {
         case 1:
-            z = x;
             if (x==255){
               puts("\nArmarios cheios.");
               break;
             }
-            
+            z = x;
             while(x==z){
               y = rand() % 8;
               mask1=0x01;
               mask1 = mask1 << y;
               x = x | mask1;
             }
-            
-            printf("x: %hhu\ny: %hhu\nmask1: %hhu\n",x, y, mask1);
-            puts("\nArmarios: ");
+            puts("\n-------------------------");
+            puts("Armarios: ");
             bin((int)x);
+            puts("-------------------------");
             if (x==255) puts("\nArmarios cheios.");
             break;
         case 2:
@@ -54,11 +53,11 @@ int main () {
             puts("-------------------------");
             puts("Digite o numero do armario entre 0 e 7.");
             scanf("%hhu", &y);
-            mask1= 0x01;
+            mask1=0x01;
             mask1 = mask1 << y;
             x = x & ~mask1;
             puts("-------------------------");
-            //if (x==z) puts("Armario ja desocupado.");
+            if (x==z) puts("Armario ja desocupado.");
             bin((int)x);
             puts("-------------------------");
             break;
