@@ -4,7 +4,7 @@ Sistema de armários
 
 Imagine que você foi contratado para desenvolver um sistema para gerenciar os arm ́arios de alunos de
 uma universidade. Inicialmente, você ter a que fazer uma prova de conceito para 8 arm ́arios. Devido
-`as limita ̧c ̃oes de mem ́oria no dispositivo onde seu c ́odigo ser ́a embarcado, vocˆe optou por utilizar um
+as limita ̧c ̃oes de mem ́oria no dispositivo onde seu c ́odigo ser ́a embarcado, vocˆe optou por utilizar um
 mapa de bits. Dessa forma, para cada arm ́ario vocˆe ir ́a associar um bit, sendo 0 para dispon ́ıvel e
 1 para ocupado. Vocˆe dever ́a usar uma UNICA vari ́avel do tipo  ́ char sem sinal para controle. N ̃ao
 utilize vetores.
